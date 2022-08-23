@@ -1,6 +1,6 @@
 {
     "macros": [
-      "MBED_CONF_MBED_TRACE_FEA_IPV6=1"
+      "MBED_CONF_MBED_TRACE_FEA_IPV6=0"
     ],
     "config": {
       "main-stack-size": {
@@ -13,7 +13,10 @@
         "platform.stdio-convert-newlines": true,
         "platform.stdio-baud-rate": 115200,
         "platform.default-serial-baud-rate": 115200,
-        "platform.stdio-buffered-serial": true
+        "platform.stdio-buffered-serial": true,
+        "target.printf_lib":"minimal-printf",
+        "platform.minimal-printf-enable-floating-point": true,
+        "platform.minimal-printf-set-floating-point-max-decimals": 2
       },
       "DISCO_L475VG_IOT01A": {
         "mbed-trace.enable": true,

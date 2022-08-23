@@ -4,18 +4,6 @@
  */
 
 #include "mbed.h"
-#include <cstdint>
-
-static constexpr uint32_t kGlobalConstantExpr = 1;
-static const uint32_t kGlobalConstant = rand();
-  
-class ClassWithConstant 
-{
-public: 
-  static constexpr uint32_t kConstantExpr = 2;
-  static const uint32_t kConstant;// = kGlobalConstant * 2;
-};
-const uint32_t ClassWithConstant::kConstant = kGlobalConstant * 2;
 
 int main1()
 {       
