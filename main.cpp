@@ -5,7 +5,7 @@
 
 #include "mbed.h"
 
-int main1()
+int main()
 {       
     static constexpr std::chrono::seconds kBlinkInterval = 1s;
   
